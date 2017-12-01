@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>登录</h1>
+<form action="" method="post" name="login">
+    {{form.hidden_tag()}}
+    <p>
+        OpenID:<br> 
+        {{form.openid(size=80)}}<br>
+        {% for error in form.errors.openid %}
+        <span style="color: red;">[{{error}}]</span>
+        {% endfor %}<br>
+    </p>
+    <p>{{form.remember_me}} 记住我</p>
+    <p>
+        <input type="submit" value="登录">
+    </p>
+</form>
+{% endblock %}
