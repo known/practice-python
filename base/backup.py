@@ -9,8 +9,9 @@ import time
 def backupzip(source, target):
     '''
     ZIP备份文件函数。
+
     自动将source目录列表的文件备份打包成zip文件，存放在target目录下的ymdHMS.zip。
-    
+
     source：备份文件路径列表。
     target：备份文件存放路径。
     '''
